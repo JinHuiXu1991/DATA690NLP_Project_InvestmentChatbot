@@ -1,3 +1,26 @@
+# Application of Chatbot to Investment Advising with DialogFlow
+## Author: Jhancy Amarsingh, Jin Hui Xu, Shikha C. Patel
+### DATA 690 - NLP Project
+
+## Table of Contents
+- Introduction
+- Why are Chatbots a More Significant Presence in Today’s Financial Environment?
+- Features
+  - Investment Education
+  - Information Retrieval
+  - Stock Price Forecasting
+  - Stock Recommendation
+- Methodology
+  - Chatbot Development 
+  - Chatbot Fulfillment and Webhook
+  - Text Summarization
+  - Stock Price Forecasting
+  - Stock Recommendation
+- Results
+- Limitations
+- Future Scope
+- References
+
 ## Introduction
 A chatbot is a communication software application that can store appropriate answers to questions on a server, create models that continuously develop correct answers through conversations with customers, control exceptions, and provide accurate answers (Hwang, S.; Kim, J., 2021). Chatbot, an interactive AI (where the user influences the system and the system influences the user), has been widely deployed in finance, retail, public, and manufacturing industries. Appleʹs Siri, Amazonʹs Alexa, Googleʹs OKgoogle, and Samsung Electronicsʹ Bixby are good examples of voice conversion personal assistant services (Karnam, M.,2019). A Chatbot for investing purposes is an interface that communicates with financial services to give information and advice to users. Chatbots are dominating the financial industry as a method of customer interaction. Established financial organizations are experimenting with chatbots, mainly in the retail banking, investment management, and wealth management sectors. Financial institutions have embraced this trend and experts predict that, within five years, bots will replace conventional online interfaces such as websites or mobile apps (Dasagrandhi, C. S., 2022). 
 
