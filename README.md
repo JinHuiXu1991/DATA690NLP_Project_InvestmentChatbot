@@ -1,13 +1,13 @@
-# Introduction
+## Introduction
 A chatbot is a communication software application that can store appropriate answers to questions on a server, create models that continuously develop correct answers through conversations with customers, control exceptions, and provide accurate answers (Hwang, S.; Kim, J., 2021). Chatbot, an interactive AI (where the user influences the system and the system influences the user), has been widely deployed in finance, retail, public, and manufacturing industries. Appleʹs Siri, Amazonʹs Alexa, Googleʹs OKgoogle, and Samsung Electronicsʹ Bixby are good examples of voice conversion personal assistant services (Karnam, M.,2019). A Chatbot for investing purposes is an interface that communicates with financial services to give information and advice to users. Chatbots are dominating the financial industry as a method of customer interaction. Established financial organizations are experimenting with chatbots, mainly in the retail banking, investment management, and wealth management sectors. Financial institutions have embraced this trend and experts predict that, within five years, bots will replace conventional online interfaces such as websites or mobile apps (Dasagrandhi, C. S., 2022). 
 
 Investment Chatbot creates a dedicated relationship serving the investors with their investment management. The chatbot will crunch the numbers and do all the heavy lifting so that investors can focus their efforts on their investment (Botbot.AI, 2018). This service for the investor’s investments is tailored to the needs at any time of the day without worrying more about opening hours or having to consult investment personnel and enduring long waiting times.
 
-# Why are Chatbots a More Significant Presence in Today’s Financial Environment?
+## Why are Chatbots a More Significant Presence in Today’s Financial Environment?
 
 Users sometimes have to invest a lot of time on the Internet to find relevant information regarding the investments in mutual funds, bonds, cryptocurrency, stocks, and portfolio management. To alleviate these problems, our Investment Chatbot is an innovative idea built on Dialogflow to provide personalized assistance in discovering important information about any type of investment, as well as help invest, forecast stock prices, and recommend the best investment strategies based on current market stock prices. It can be challenging for investors to maintain track of every stock, especially the ones they just want to monitor. There are potential chances that sometimes investors could miss out on a buy or a sell. So, it is important to build an Investment Chatbot to ensure proper management of their investment portfolio. Eventually, any investor can take advantage of such a multifunctional investment system to grow their wealth.
 
-# Features
+## Features
 The objective of this project is to develop an Investment Chatbot that can assist users to learn how to invest wisely and provide a convenient approach to gather the necessary information and make proper financial investment decisions. The chatbot is task-oriented, which focuses on the pre-defined investment tasks and responds to very specific investment commands. The Investment Chatbot consists of four main components:
 
 * Investment Education
@@ -27,7 +27,7 @@ The objective of this project is to develop an Investment Chatbot that can assis
 
   On any particular day, when the users want a recommendation for any S&P500 stocks, the chatbot shortlists the stocks to trade based on technical indicators such as ‘Based on Relative Strength Index (RSI)’ and ‘Based on Volume.’ Technical indicators are tools that help analyze the movement in the stock prices and whether the ongoing trend is either going to continue or reverse. It helps the traders make buy or sell a particular stock of interest. 
   
-# Methodology
+## Methodology
 The investment chatbot leverages machine learning and NLP algorithms to meet the expected features mentioned above. The development process consists of five steps:
 
 * Chatbot Development
@@ -61,3 +61,38 @@ The investment chatbot leverages machine learning and NLP algorithms to meet the
 
   The Stock Recommendation feature is designed so that the investor can make an informed decision after getting the recommended stocks and their close price/volume (based on a selected indicator). It shows the present movement of stocks in the stock market. In our Investment Chatbot, we used the historical data of S&P500 stocks collected from ‘Yahoo Finance API’ to recommend the stocks based on technical indicators RSI and Volume. RSI is a Relative Strength Indicator essentially used as a momentum indicator.  It measures the magnitude of recent price changes to evaluate overbought or oversold conditions in the price of a stock (Fernando, 2022). The RSI is displayed as an oscillator and can have a magnitude of momentum from 0 to 100. Trading volume is a measure of how much a given financial asset has traded in a period of time (Mitchell, C., 2022). For stocks, volume is measured in the number of shares traded. 
   In our Investment Chatbot, we recommend stocks with RSI less than 30 (Oversold stocks) and the stocks with a higher average volume over the last 2 years in the sampled data.
+ 
+## Results
+
+  The Investment chatbot is a novel platform for users who have little experience or knowledge about investment and the stock market. It is a platform that enables the education of investors about different types of investments through the ‘Learn about investment’ feature. The retrieved information on the types of investment options is summarized by leveraging the ‘Text Summarization’ technique of Natural Language Processing. After educating the user on various investment types, the ‘Invest’ feature provides options for top investment websites where users can log in and start investing. In order to invest, the user can check the ‘Low Price,’ ‘High Price,’ ‘Open Price’, and ‘Close Price’ of the specific stock of their interest under the ‘Check the prices of stocks’ feature. Additionally, the platform has a very significant feature of ‘Forecasting the stock prices’ of a particular stock for the next five days. As recommendation is an important tool that any investor can need in their investment, this platform also provides ‘Recommendation of stocks’ based on the factors like ‘Relative Strength Index (RSI)’ and ‘Volume’. Presently, this chatbot has predefined buttons for the users to select for maintaining the flow of the conversation. Once users are familiar with the conversational flow, they can type the predefined queries without using the buttons, and the chatbot returns the corresponding information to the user.  
+
+## Limitations
+
+  This Investment Chatbot can be helpful for investors, portfolio management companies, entrepreneurs, and other stock market stakeholder who looks forward to benefiting and earning money in this competitive stock market era. However, this Investment Chatbot is only implemented on ‘Google Assistant’, it does not allow to present graphs or charts for better visualization of the forecasted stock prices. Another shortcoming of deploying with Google Assistant is that it does not allow the developers to provide an alternate/attractive UI to our chatbot, but it can be implemented by using another platform in a revised version of this chatbot. 
+
+## Future Scope
+
+  This chatbot can also be deployed on other platforms and applications with more enhanced features to be compatible with other languages than English. This integration of compatibility with other languages will give a broader scope and can be useful to the wider public of the world speaking other languages than English. This Chatbot can also leverage more features to help invest in the mutual funds, bonds and crypto-by-crypto price predictions and recommendations. We can also leverage more on stock prediction and recommendation based on Fundamental Metrics like EPS, Price-to-Earnings Ratio, Price-to-Book Ratio and Return on Equity (ROE) and Technical Indicators like Money Flow Index (MFI), Simple Moving Average (SMA), and Bollinger Bands. We can leverage the latest Neural Network models to forecast stock prices.  It can have more conversations and give insightful responses to the investor/user about the risk percentage, return percentage, and the duration of the investment before recommending the stocks. This chatbot can be connected with Trading APIs to help place the trading orders after the conversation. 
+
+## References
+
+Dasagrandhi, C. S., 2022). 22 reasons why investing in Chatbots is no longer an option. Blog. Retrieved May 1, 2022, from https://blog.vsoftconsulting.com/blog/22-reasons-why-investing-in-chatbots-is-no-longer-an-option 
+
+Karnam, M. (2019, September 24). How to build an investment management chatbot. IBM. https://www.ibm.com/cloud/blog/announcements/build-investment-management-chatbot
+
+Hwang, Sewoong & Kim, Jonghyuk. (2021). Toward a Chatbot for Financial Sustainability. Sustainability. 13. 3173. 10.3390/su13063173.
+
+D3VTech. (2021, August 2). The AI Behind Google Dialogflow - How it Differs from Other Conversational AI | Cloud Insights | D3V Technology Solutions. https://www.d3vtech.com/insights/the-ai-behind-google-dialogflow-how-it-differs-from-other-conversational-ai
+
+Mitchell, C. (2022, February 10). How to Use Volume to Improve Your Trading. Investopedia. https://www.investopedia.com/articles/technical/02/010702.asp
+
+Hwang, S.; Kim, J. Toward a Chatbot for Financial Sustainability. Sustainability 2021, 13, 3173. https://doi.org/10.3390/su13063173
+
+Botbot.AI. (2018, February 2). Banking & Investment - Chatbot for Enterprise Productivity. Botbot.AI. https://botbot.ai/solutions/banking-investment-chatbot/
+
+Dhaduk, H. (2021, July 18). Stock market forecasting using Time Series analysis With ARIMA model. Analytics Vidhya. https://www.analyticsvidhya.com/blog/2021/07/stock-market-forecasting-using-time-series-analysis-with-arima-model/
+
+Fernando, J. (2022, February 19). Relative Strength Index (RSI). Investopedia. 
+
+Finra. (n.d.). Learn to Invest | FINRA.org. https://www.finra.org/investors/learn-to-invest
+
