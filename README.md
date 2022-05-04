@@ -2,6 +2,10 @@
 ## Author: Jhancy Amarsingh, Jin Hui Xu, Shikha C. Patel
 ### DATA 690 - NLP Project
 
+## Paper
+  - <a href="https://github.com/JinHuiXu1991/DATA690NLP_Project_InvestmentChatbot/blob/a44047e77e8a1410bf41c19e7fe744d874e6fdf7/paper/Investment_chatbot_paper.docx">Word</a>
+  - <a href="https://github.com/JinHuiXu1991/DATA690NLP_Project_InvestmentChatbot/blob/a44047e77e8a1410bf41c19e7fe744d874e6fdf7/paper/Investment_chatbot_paper.pdf">PDF</a>
+    
 ## Table of Contents
 - Introduction
 - Why are Chatbots a More Significant Presence in Today’s Financial Environment?
