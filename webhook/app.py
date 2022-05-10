@@ -550,68 +550,90 @@ def makeWebhookResult(price , stockname , datee):
         #speech = ["Hey, here you go, the "+str(price)+" price for "+str(stockname)+" is $"+ stock_val + " on date " + str(datee)[0:10] + "\n" + "\n\nClick on the link to check the graph of " + str(stockname) + ": " + "https://finance.yahoo.com/quote/" + str(stockname) + "/"]
         speech = ["Hey, here you go, the "+str(price)+" price for "+str(stockname)+" is $"+ stock_val + " on date " + str(datee)[0:10]]
         url = "https://finance.yahoo.com/quote/" + str(stockname) + "/"
+
+        return {
+        "fulfillmentMessages": [
+              {
+                "platform": "ACTIONS_ON_GOOGLE",
+                "simpleResponses": {
+                  "simpleResponses": [
+                    {
+                      "textToSpeech": str(random.choice(speech))
+                    }
+                  ]
+                }
+              },
+              {
+                "platform": "ACTIONS_ON_GOOGLE",
+                "basicCard": {
+                  "title": str(stockname)+ "- $"+ stock_val,
+                  "image": {
+                    "imageUri": "https://s3.mobile-assets.com/production/246EcXxeSROZGjjSvBWrhSGY4KNkv5rni/newsfeed/cryptocurrency-screener-yahoo-finance-1512117067.png",
+                    "accessibilityText": "Yahoo Finance"
+                  },
+                  "buttons": [
+                    {
+                      "title": "View on Yahoo Finance",
+                      "openUriAction": {
+                        "uri": url
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "platform": "ACTIONS_ON_GOOGLE",
+                "linkOutSuggestion": {
+                  "destinationName": "Stock Graph",
+                  "uri": url
+                }
+              },
+              {
+                "platform": "ACTIONS_ON_GOOGLE",
+                "suggestions": {
+                  "suggestions": [
+                    {
+                      "title": "Check another price"
+                    },
+                    {
+                      "title": "Back To Main Menu"
+                    }
+                  ]
+                }
+              }
+            ]
+        }
+
     else:
         speech = ["Sorry, can't find the "+str(price)+" price for "+str(stockname)+ " on date " + str(datee)[0:10] + ", please try another stock or date."]
 
-    return {
-    "fulfillmentMessages": [
-          {
-            "platform": "ACTIONS_ON_GOOGLE",
-            "simpleResponses": {
-              "simpleResponses": [
-                {
-                  "textToSpeech": str(random.choice(speech))
-                }
-              ]
-            }
-          },
-          {
-            "platform": "ACTIONS_ON_GOOGLE",
-            "basicCard": {
-              "title": str(stockname)+ "- $"+ stock_val,
-              "image": {
-                "imageUri": "https://s3.mobile-assets.com/production/246EcXxeSROZGjjSvBWrhSGY4KNkv5rni/newsfeed/cryptocurrency-screener-yahoo-finance-1512117067.png",
-                "accessibilityText": "Yahoo Finance"
-              },
-              "buttons": [
-                {
-                  "title": "View on Yahoo Finance",
-                  "openUriAction": {
-                    "uri": url
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "platform": "ACTIONS_ON_GOOGLE",
-            "linkOutSuggestion": {
-              "destinationName": "Stock Graph",
-              "uri": url
-            }
-          },
-          {
-            "platform": "ACTIONS_ON_GOOGLE",
-            "suggestions": {
-              "suggestions": [
-                {
-                  "title": "Check another price"
-                },
-                {
-                  "title": "Back To Main Menu"
-                }
-              ]
-            }
-          }
-        ]
-    }
-
-    '''
-    return {
-                        "fulfillmentText":  str(random.choice(speech)),
-                        "source": "alphavantage API"
+        return {
+        "fulfillmentMessages": [
+              {
+                "platform": "ACTIONS_ON_GOOGLE",
+                "simpleResponses": {
+                  "simpleResponses": [
+                    {
+                      "textToSpeech": str(random.choice(speech))
                     }
-    '''
+                  ]
+                }
+              },
+              {
+                "platform": "ACTIONS_ON_GOOGLE",
+                "suggestions": {
+                  "suggestions": [
+                    {
+                      "title": "Check another price"
+                    },
+                    {
+                      "title": "Back To Main Menu"
+                    }
+                  ]
+                }
+              }
+            ]
+        }
 
 # def makeWebhookResult(price , stockname , startdate , enddate):
 #     stock_data = yf.download(stockname,start=startdate,end = enddate, interval='1d')
